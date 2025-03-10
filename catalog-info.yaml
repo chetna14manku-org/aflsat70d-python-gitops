@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: aflsat70d-python-gitops
+  description: This is GitOps manifest for aflsat70d-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=aflsat70d-python
+    backstage.io/kubernetes-id: aflsat70d-python 
+    backstage.io/techdocs-ref: dir:. 
+    github.com/project-slug: chetna14manku-org/aflsat70d-python-gitops   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:aflsat70d-python
