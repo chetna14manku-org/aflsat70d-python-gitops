@@ -12,5 +12,5 @@ spec:
   template:
     spec:
       containers:
-        - image: quay.io/chetna14manku_org/rhtap-qe-python:github-678f7c16fda2b363350cc0acd3f6056c6bc43a3c
+        - image: quay.io/chetna14manku_org/rhtap-qe-python:github-0c633d301097eea0093e11f1c95cb6aeaed02857
           name: container-image
